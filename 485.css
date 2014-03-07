@@ -19,7 +19,7 @@ footer, header, hgroup, menu, nav, output, section, summary, audio, video {
 body, p {
     line-height: 1;
     font-family: Georgia, serif;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 /* reasonable starting margins */

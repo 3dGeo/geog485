@@ -28,7 +28,8 @@ a {
 	font-size: small;
 }
 
-.ItalicText1 {
+a:hover {
 	font-style: italic;
+	font-size: 11pt;
 }
 

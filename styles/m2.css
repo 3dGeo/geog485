@@ -4,12 +4,9 @@ body {
 }
 
 div#event-map {
-	width: 100%;
+	width: 65%;
 	height: 500px;
-		border-top-style: solid;
-		border-top-width: 2px;
-		border-bottom-style: solid;
-		border-bottom-width: 2px;
+	border:2px solid black;
 }
 
 h1 {

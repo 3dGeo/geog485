@@ -1,16 +1,20 @@
 body {
-	background-color: #f3f3eb;
+	background-color: #FFEFDB;
 	font: medium "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 div#event-map {
 	width: 100%;
 	height: 500px;
+		border-top-style: solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
 }
 
 h1 {
 	font-size: x-large;
-	background-color: #ddd;
+	background-color: #FFEFDB;
 	padding: 8px;
 	text-align: center;
 }
@@ -18,10 +22,9 @@ h1 {
 h2 {
 	font-size: large;
 	font-weight: bold;
-	background-color: #f2f2f2;
+	background-color: #FFEFDB;
 	padding: 4px;
-	border-top-style: solid;
-	border-top-width: 1px;
+
 }
 
 a {

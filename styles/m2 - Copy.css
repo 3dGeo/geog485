@@ -3,7 +3,7 @@ body {
 	font: medium "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-div#earthLocation {
+div#event-map {
 	width: 100%;
 	height: 500px;
 		border-top-style: solid;

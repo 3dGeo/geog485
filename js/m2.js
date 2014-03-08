@@ -74,7 +74,7 @@ function initialize() {
       };
       
     // initialize the map object with the map settings defined above
-    map = new google.maps.Map(document.getElementById("earthLocation"), mapOptions);
+    map = new google.maps.Map(document.getElementById("event-map"), mapOptions);
     
     buildMarkers(map, eventPlaces)
     addFusionTable()

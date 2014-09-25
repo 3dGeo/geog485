@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Week 5 Homework -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+ Wk5 Assignment
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles/485.css">
+	<style>
+		p {
+			line-height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+<h1 align=center>
+    Week 5 Milestone
+</h1>
+		<div align=center>
+			<p>	
+				<a href="http://3dgeo.github.io/geog485/links.html">Links</a>&#160;&#160;&#160;
+				<a href="http://3dgeo.github.io/geog485/contact.html">About Me</a>&#160;&#160;&#160;
+				<a href="http://3dgeo.github.io/geog485/m1.html">Port-de-Paix, Haiti</a>&#160;&#160;&#160;
+				<a href="http://3dgeo.github.io/geog485/m2.html">World Sites</a>
+		        <a href="http://3dgeo.github.io/geog485/m3.html">Map 3</a> 
+			</p>
+		</div>
+		<div align=left>
+		
+	<p>
+	Examine each file using either gdalinfo or ogrinfo (depending upon whether it is a raster or vector data product), and answer the following questions about each data set:
+What is the projection/coordinate system for the data product? If it is undefined, note it.
+What is the spatial extent (i.e. bounding box) of the data product?
+If it is a vector dataset, how many features does it have?
+If it is a raster dataset, what is the pixel resolution (include units) of the dataset?
+
+	</p>
+	<p>
+    The first is a raster Digital Elevation Model (DEM)- (36109h1.dem)
+PROJCS["UTM Zone 12, Northern Hemisphere<br>
+Corner Coordinates:<br>
+Upper Left  (  666845.000, 4096545.000) (109d 7'29.71"W, 37d 0'7.54"N)<br>
+Lower Left  (  666845.000, 4082435.000) (109d 7'40.92"W, 36d52'29.87"N)<br>
+Upper Right (  678255.000, 4096545.000) (108d59'48.33"W, 37d 0'0.00"N)<br>
+Lower Right (  678255.000, 4082435.000) (109d 0'0.30"W, 36d52'22.37"N)<br>
+Center      (  672550.000, 4089490.000) (109d 3'44.82"W, 36d56'15.01"N)<br>
+Pixel Size = (10.000000000000000,-10.000000000000000)
+</p>
+<p>
+    The second is a vector/shape file which delineates New Mexico state boundaries (States_NAD1983UTM_19N.shp)
+PROJCS["NAD_1983_UTM_Zone_19N"<br>
+Extent: (-3905764.680039, 2825390.743646) - (660946.294614, 6478585.242759)<br>
+Feature Count: 51
+</p>
+<p>
+   The third is a Raster/TIF overlay which displays soil types. (36103h12.tif)<br>
+PROJCS["NAD83 / UTM zone 13N"<br>
+NW_QUAD_CORNER_XY=672400.272 4096626.998<br>
+NE_QUAD_CORNER_XY=677962.190 4096742.059<br>
+SE_QUAD_CORNER_XY=678107.819 4089807.588<br>
+SW_QUAD_CORNER_XY=672541.345 4089692.600<br>
+WEST_LONGITUDE=-103 3 45.000<br>
+EAST_LONGITUDE=-103 0 0.000<br>
+NORTH_LATITUDE=37 0 0.000<br>
+SOUTH_LATITUDE=36 56 15.000<br>
+Pixel Size = (1.000000000000000,-1.000000000000000) </p>
+</p> 
+<p>
+Use proj or cs2cs (I suggest you use cs2cs) to calculate the coordinates of the spatial extent of the datasets that you downloaded in UTM Zone 13N, NAD27. <br>Paste the input and output of the command(s) into your writeup.<br>
+C:\Program Files (x86)\FWTools2.4.7\products\3>cs2cs +proj=latlong +datum=NAD83 +to +proj=utm +zone10 +datum=NAD27<br>
+833982.20       0.00 0.00
+</p>
+</div>
+</body>
+</html> 

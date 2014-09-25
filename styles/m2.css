@@ -1,0 +1,35 @@
+body {
+	background-color: #FFEFDB;
+	font: medium "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+div#event-map {
+	width: 65%;
+	height: 500px;
+	border:2px solid black;
+}
+
+h1 {
+	font-size: x-large;
+	background-color: #FFEFDB;
+	padding: 8px;
+	text-align: center;
+}
+
+h2 {
+	font-size: large;
+	font-weight: bold;
+	background-color: #FFEFDB;
+	padding: 4px;
+
+}
+
+a {
+	font-size: small;
+}
+
+a:hover {
+	font-style: italic;
+	font-size: 11pt;
+}
+
